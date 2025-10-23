@@ -1,66 +1,92 @@
-# 📄 PDF Q&A Chatbot — Gemini Flash (RAG Mini)
+# 📄 AI PDF Q&A Chatbot — Gemini Flash (Streamlit)
 
-This is an AI-powered PDF Question & Answer Web App built using **Gemini Flash**, **Python**, and **Streamlit**.  
-Users can upload any PDF, ask questions, and get instant AI-generated answers based on the document content.
+This is an **AI-powered PDF Question & Answer Web App** built using **Gemini Flash**, **Python**, and **Streamlit**.  
+The app allows users to **upload a PDF, ask questions, and get instant AI-generated answers** based on the document's content.
 
----
-
-### 🚀 Features
-✅ Upload any PDF file  
-✅ Ask free-text questions  
-✅ Gemini Flash model for fast responses  
-✅ Built with Streamlit — runs in the browser  
-✅ Clean and beginner-friendly code
+This project is part of my **freelance portfolio** — designed for real business use cases on **Upwork & Fiverr**, such as internal document search, knowledge bots, compliance documents, manuals, handbooks, SOPs, and more.
 
 ---
 
-### 🧰 Tech Stack
+## 🚀 Features
+
+| Feature | Status |
+|---------|---------|
+| Upload any PDF | ✅ |
+| Ask natural language questions about content | ✅ |
+| Gemini Flash LLM responses | ✅ |
+| Streamlit UI, runs in browser | ✅ |
+| Fast inference | ✅ |
+
+---
+
+## 🧰 Tech Stack
+
 | Component | Technology |
 |-----------|------------|
-| LLM Model | Gemini Flash |
-| Backend   | Python |
-| UI        | Streamlit |
-| Parser    | PyPDF2 |
+| **LLM Model** | Gemini Flash |
+| **Language** | Python |
+| **UI Framework** | Streamlit |
+| **Document Parser** | PyPDF2 |
+
+---
+
+## 📌 Use Cases (for Clients)
+
+This app can be used for:
+
+- 📌 Company SOP / Policy Q&A
+- 📌 Legal document Q&A
+- 📌 Handbook & Training manuals
+- 📌 Research papers summarization
+- 📌 Proposal, report, or technical document Q&A
+- 📌 Mini RAG system for internal teams
 
 🔑 API Key
 
-You can generate a Gemini API Key at:
-
+Generate a free Gemini API Key here:
 https://aistudio.google.com/apikey
 
-Then enter it in the app UI.
+Input the key into the app when prompted.
 
-📌 Demo (Local)
+📌 How It Works
 
-Run the app
+Upload your PDF
 
-Upload a PDF
+Ask any question in natural language
 
-Ask your question
+The app reads and extracts PDF content
 
-Get instant answers ✨
+Gemini Flash processes your question
 
-📌 Portfolio Use Case
+The answer is displayed instantly
 
-This app can be offered on Upwork / Fiverr for clients who need:
+📌 Demo Status
 
-Document chatbot
+✅ Local Streamlit Demo working
 
-PDF document search/Q&A
+🌍 Optional deployment (coming soon):
 
-AI automation for internal files
+Streamlit Cloud / Railway / HuggingFace
 
-Mini RAG systems
+📌 Roadmap (Next Upgrades)
+
+ Vector DB (ChromaDB / FAISS) for longer PDFs
+
+ Web UI styling (Tailwind / Bootstrap)
+
+ Web deployment for public demo
+
+ Web search + multi-PDF support
 
 🧑‍💻 Author
 
-Rizki Firmansyah (abirizki)
-Freelance AI Automation Developer
+Rizki Firmansyah — AI Automation Developer
 GitHub: https://github.com/abirizki
+
 ---
 
-### 🛠️ Installation
+## 🛠️ Installation (Local Setup)
+
 ```bash
 pip install -r requirements.txt
 streamlit run app/main.py
-
