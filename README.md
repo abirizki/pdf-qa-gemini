@@ -22,6 +22,41 @@ Users can upload any PDF, ask questions, and get instant AI-generated answers ba
 | UI        | Streamlit |
 | Parser    | PyPDF2 |
 
+🔑 API Key
+
+You can generate a Gemini API Key at:
+
+https://aistudio.google.com/apikey
+
+Then enter it in the app UI.
+
+📌 Demo (Local)
+
+Run the app
+
+Upload a PDF
+
+Ask your question
+
+Get instant answers ✨
+
+📌 Portfolio Use Case
+
+This app can be offered on Upwork / Fiverr for clients who need:
+
+Document chatbot
+
+PDF document search/Q&A
+
+AI automation for internal files
+
+Mini RAG systems
+
+🧑‍💻 Author
+
+Rizki Firmansyah (abirizki)
+Freelance AI Automation Developer
+GitHub: https://github.com/abirizki
 ---
 
 ### 🛠️ Installation
