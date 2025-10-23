@@ -1,6 +1,9 @@
 import streamlit as st
 import PyPDF2
 import google.generativeai as genai
+import subprocess
+
+subprocess.run(["streamlit", "run", "app/main.py"])
 
 st.title("📄 PDF Q&A Chatbot (Gemini)")
 
