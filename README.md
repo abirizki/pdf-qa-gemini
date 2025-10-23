@@ -1,92 +1,91 @@
-# 📄 AI PDF Q&A Chatbot — Gemini Flash (Streamlit)
+# 📌 PDF Q&A with Gemini (Google AI)
 
-This is an **AI-powered PDF Question & Answer Web App** built using **Gemini Flash**, **Python**, and **Streamlit**.  
-The app allows users to **upload a PDF, ask questions, and get instant AI-generated answers** based on the document's content.
-
-This project is part of my **freelance portfolio** — designed for real business use cases on **Upwork & Fiverr**, such as internal document search, knowledge bots, compliance documents, manuals, handbooks, SOPs, and more.
+A simple and fast PDF Question Answering app powered by **Google Gemini 2.0 Flash**, built with **Python + Streamlit**.  
+This app allows you to upload a PDF, extract the content, and ask any question related to the document.
 
 ---
 
 ## 🚀 Features
 
-| Feature | Status |
-|---------|---------|
-| Upload any PDF | ✅ |
-| Ask natural language questions about content | ✅ |
-| Gemini Flash LLM responses | ✅ |
-| Streamlit UI, runs in browser | ✅ |
-| Fast inference | ✅ |
+- ✅ Upload PDF and extract text
+- ✅ Ask questions based on document context (PDF Q&A)
+- ✅ Powered by **Gemini 2.0 Flash**
+- ✅ Clean and simple UI with Streamlit
+- ✅ Fast response and lightweight
+- ✅ Customizable for future features
+- ✅ Ready to deploy on **HuggingFace Spaces**
 
 ---
 
-## 🧰 Tech Stack
+## 🧱 Tech Stack
 
 | Component | Technology |
 |-----------|------------|
-| **LLM Model** | Gemini Flash |
-| **Language** | Python |
-| **UI Framework** | Streamlit |
-| **Document Parser** | PyPDF2 |
+| AI Model  | Gemini 2.0 Flash |
+| Backend   | Python |
+| UI        | Streamlit |
+| PDF Parser| PyPDF2 |
 
 ---
 
-## 📌 Use Cases (for Clients)
+## 📌 Project Structure
+pdf-qa-gemini/
+│
+├─ app/
+│ └─ main.py
+│
+├─ requirements.txt
+└─ README.md
 
-This app can be used for:
 
-- 📌 Company SOP / Policy Q&A
-- 📌 Legal document Q&A
-- 📌 Handbook & Training manuals
-- 📌 Research papers summarization
-- 📌 Proposal, report, or technical document Q&A
-- 📌 Mini RAG system for internal teams
+---
 
-🔑 API Key
+## 🧪 Local Development
 
-Generate a free Gemini API Key here:
-https://aistudio.google.com/apikey
+### 1. Create virtual environment (optional)
+```bash
+python -m venv venv
+source venv/Scripts/activate   # Windows
 
-Input the key into the app when prompted.
+2. Install dependencies
+pip install -r requirements.txt
 
-📌 How It Works
+3. Add your Gemini API key
 
-Upload your PDF
+Create a .env file:
 
-Ask any question in natural language
+GEMINI_API_KEY=YOUR_API_KEY_HERE
 
-The app reads and extracts PDF content
+4. Run the app
+streamlit run app/main.py
 
-Gemini Flash processes your question
+🌐 Deploy to HuggingFace
 
-The answer is displayed instantly
+Upload project to HF Space
 
-📌 Demo Status
+Select Python + Streamlit
 
-✅ Local Streamlit Demo working
+Make sure requirements.txt exists
 
-🌍 Optional deployment (coming soon):
+HF will auto-run app/main.py
 
-Streamlit Cloud / Railway / HuggingFace
+🛠 Customization & Future Development (Roadmap)
+Feature	Status
+PDF Q&A	✅ Done
+Support Multiple PDFs	⏳ Next
+Add Memory / Chat History	⏳ Next
+Support for images inside PDF	⏳ Next
+Model switch (Gemini / OpenAI / Local LLM)	⏳ Next
+Export Q&A to PDF	⏳ Next
+Multi-language support	⏳ Next
 
-📌 Roadmap (Next Upgrades)
+This project is designed to be fully customizable, so additional features can be added easily based on client needs.
 
- Vector DB (ChromaDB / FAISS) for longer PDFs
+👨‍💻 Author
 
- Web UI styling (Tailwind / Bootstrap)
-
- Web deployment for public demo
-
- Web search + multi-PDF support
-
-🧑‍💻 Author
-
-Rizki Firmansyah — AI Automation Developer
+Created by Rizki Firmansyah
 GitHub: https://github.com/abirizki
 
----
+📄 License
 
-## 🛠️ Installation (Local Setup)
-
-```bash
-pip install -r requirements.txt
-streamlit run app/main.py
+MIT License
